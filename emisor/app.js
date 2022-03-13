@@ -1,4 +1,5 @@
-var Emitter = require('./emitter');
+//var Emitter = require('./emitter');
+var Emitter = require('events');
 
 var emtr = new Emitter(); // Crea un nuevo emisor de eventos
 emtr.on('greet', () => {
@@ -20,3 +21,7 @@ emtr.on('jump', () => {
 
 console.log(emtr); // emtr contiene dos tipos de eventos: 1. greet, el cual activa 2 funciones anónimos; 2. jump, este solo activa una función anónimo
 emtr.emit('jump');
+
+
+// Notas de la práctica 7
+//Pese a los cambios, la ejecución no cambió
